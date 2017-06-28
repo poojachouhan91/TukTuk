@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!-- Here you put the rest of your current view-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  >
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/first_name"
+        android:id="@+id/first_name"
+        android:padding="10dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/last_name"
+        android:id="@+id/second_name"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:inputType="text"
+        android:background="@drawable/rounded_edittext"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/email"
+        android:id="@+id/email"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_edittext"/>
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/state"
+        android:id="@+id/state"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/rounded_edittext"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/city"
+        android:id="@+id/city"
+        android:inputType="text"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_edittext"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/contact"
+        android:id="@+id/contact"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:inputType="number"
+        android:background="@drawable/rounded_edittext"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/password"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_edittext"
+        />
+
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/vehicle"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/vehicle_status"
+        android:id="@+id/vehicle_status"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/referral_code"
+        android:id="@+id/referral"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:text="@string/submit"
+        android:id="@+id/submit_btn"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_margin="15dp"
+        android:background="@color/colorOrange"
+        android:layout_below="@+id/vehicle"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+</ScrollView>

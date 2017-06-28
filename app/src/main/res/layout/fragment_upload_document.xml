@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/driver_licence"
+        android:id="@+id/driver_licence"
+        android:padding="13dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/rounded_edittext"
+        />
+
+    <ImageView
+        android:id="@+id/licence_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/upload_doc"
+        android:layout_gravity="right"
+        android:layout_margin="12dp"/>
+
+
+</FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp"
+       >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/driver_photo"
+        android:id="@+id/driver_photo"
+        android:padding="13dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <ImageView
+        android:id="@+id/photo_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/upload_doc"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"/>
+
+</FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/passbook"
+        android:id="@+id/passbook"
+        android:padding="13dp"
+        android:background="@drawable/rounded_edittext"/>
+
+        <ImageView
+            android:id="@+id/passbook_doc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/upload_doc"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"/>
+
+</FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="3dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:hint="@string/rc"
+        android:id="@+id/rc"
+        android:padding="13dp"
+        android:background="@drawable/rounded_edittext"/>
+
+    <ImageView
+        android:id="@+id/rc_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/upload_doc"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"/>
+    </FrameLayout>
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="37dp"
+        android:text="@string/submit"
+        android:id="@+id/submit_btn"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorOrange"
+        android:layout_below="@+id/vehicle"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

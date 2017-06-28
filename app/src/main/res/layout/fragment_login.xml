@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/login"
+    tools:context="com.hextech.tuktukdriver.MainActivity"
+    android:fitsSystemWindows="true"
+    android:id="@+id/container"
+    >
+
+    <RelativeLayout
+        android:id="@+id/mob_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/edit_mob"
+            android:layout_marginBottom="30dp"
+            android:background="@mipmap/logo"
+            />
+
+        <TextView
+            android:id="@+id/country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/draw_editbox"
+            android:hint="@string/_91"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:minWidth="42dp"
+            android:minHeight="37dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignTop="@+id/edit_mob"
+            android:layout_alignStart="@+id/login_btn" />
+
+        <EditText
+            android:id="@+id/edit_mob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/draw_editbox"
+            android:hint="@string/mobile_number"
+            android:inputType="number"
+            android:padding="5dp"
+            android:minWidth="202dp"
+            android:minHeight="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/login_btn"
+            android:layout_marginBottom="174dp" />
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="37dp"
+            android:text="@string/login_sign_up"
+            android:id="@+id/login_btn"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_margin="15dp"
+            android:background="@color/colorOrange"
+            android:layout_below="@+id/country_code"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

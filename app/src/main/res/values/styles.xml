@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <declare-styleable name="PinView">
+        <attr name="boxCount" format="integer" />
+        <attr name="boxHeight" format="dimension" />
+        <attr name="boxRadius" format="dimension" />
+        <attr name="boxMargin" format="dimension" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+    <dimen name="pv_pin_view_box_border_width">2dp</dimen>
+    <dimen name="pv_pin_view_box_height">48dp</dimen>
+    <dimen name="pv_pin_view_box_margin">5dp</dimen>
+    <dimen name="pv_pin_view_box_radius">5dp</dimen>
+
+    <style name="PinWidget" />
+
+    <style name="PinWidget.PinView" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>
+
+
